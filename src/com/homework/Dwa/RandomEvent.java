@@ -19,7 +19,7 @@ public class RandomEvent {
 
             switch (ticket) {
                 case 0:
-                    System.out.println("try again ");
+                    System.out.println("try again ;P");
                     break;
                 case 1:
                     System.out.println("You won won lotteryPrize ");
