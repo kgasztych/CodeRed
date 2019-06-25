@@ -11,9 +11,9 @@ public class RandomEvent {
 
     public void applyLuck(Inventory inventory) {
 
-        int ticket = new Random().nextInt(5);
+        int ticket = new Random().nextInt(6);
 
-        Inventory lottery = new Inventory();
+        //Inventory lottery = new Inventory();
 
         do {
 

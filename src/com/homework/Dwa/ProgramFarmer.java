@@ -40,7 +40,7 @@ public class ProgramFarmer {
                     System.out.println(inventory);
                     break;
                 case 5:
-                    yourTurn.applyLuck(RandomEvent);
+                    yourTurn.applyLuck(inventory);
                     break;
                     //System.out.println("Money =  " + inventory.money);
                 default:
