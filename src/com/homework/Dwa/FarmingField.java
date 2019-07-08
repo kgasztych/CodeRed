@@ -7,6 +7,7 @@ public abstract class FarmingField {
     int baseProfitAfterHarvest = 150;
     int droughtRisk;
     String name;
+    // String testApproval;
 
     public int calculateProfit() {
         Random random = new Random();
