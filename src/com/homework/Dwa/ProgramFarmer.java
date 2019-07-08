@@ -43,6 +43,9 @@ public class ProgramFarmer {
                     yourTurn.applyLuck(inventory);
                     break;
                     //System.out.println("Money =  " + inventory.money);
+                case 6:
+                    inventory.buyCow();
+                    break;
                 default:
                     System.out.println("Bye Bye");
                     break;
@@ -58,7 +61,7 @@ public class ProgramFarmer {
                // System.out.println("You don't have enough money to buy the field");
                 //return;
             }
-        while (option != 6);
+        while (option != 7);
 
             //inventory.buyBlueBerryField();
             //System.out.println("Money BB=  " + inventory.money);
@@ -67,7 +70,7 @@ public class ProgramFarmer {
     static void printUserMenu(){
 
         String[] options = new String[] {"I'm in", "Buy Blueberries field", "Buy Strawberry Field", "Buy Enhanced Field",
-                "Show inventory", "Next turn","Exit Game"};
+                "Show inventory", "Next turn","Buy Cow" , "Exit Game"};
 
         System.out.println("Welcome to my game ");
         for (int i =0 ;i<options.length;i++) {

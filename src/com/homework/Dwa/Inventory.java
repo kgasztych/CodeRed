@@ -10,6 +10,7 @@ public class Inventory {
 
 
     ArrayList<FarmingField> fields = new ArrayList<>();
+    ArrayList<Cow> cows = new ArrayList<>();
 
     public Inventory(){
         money = 1000;
@@ -42,6 +43,14 @@ public class Inventory {
         System.out.println("Superberries bought by: " + field.sowingCost);
 
     }
+    public void buyCow() {
+
+        Cow cow = new Cow();
+        cows.add(cow);
+        money = money - cow.gold;
+        System.out.println("New Cow bought by: " + cow.gold);
+    }
+
     public void nextTurn() {
         System.out.println("Next turn!");
         for (FarmingField f: fields){
